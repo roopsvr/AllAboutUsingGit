@@ -1,0 +1,95 @@
+Distributed version control of COMS is achieved by using Git. The Git Merging and branching functionality are to be used effectively to develop and deploy COMS code. Listed below are steps that guide developers to start developing using Git as a version control and to aid Continuous Deployment of COMS. Developers are to use the "_Web storm_" IDE for all development and Git Activities
+
+## Guide to Developers
+### Cloning 
+To start with development, Clone the COMS code(development Branch) on to your machine.
+
+###  Issues
+An issue could be a specific functionality/ feature to be added or a bug to be fixed. An issue can be characterized by the Labels attached to it (labels available: _"bug, duplicate, enhancement, help wanted, invalid, question, wontfix_").
+
+### Milestones 
+Associate an "_Issue_" to a "_Milestone_". A milestone can have a "_Title_", "_Description_" and a "_Due Date_". Completion status of the milestones can be tracked on the Github site.
+
+### Branching
+There are two constant branches (Master and Development branch) maintained for the project. Developers are to create Issue specific branches during development. 
+
+* "_Master_" Branch: Branch that is ready for deployment at any given point of time. No development is to be done on this branch.
+
+* "_Development_" Branch: Branch that has the "_development in progress_" code. Code that has passed the Unit tests, end to end tests on "_Development Environment_" and is ready for deployment can be merged into the Master Branch.
+                 
+* "_Issue_" Specific Branch: 
+Branch created by developer to work on an Issue. This Issue specific branch is to be created from the Development Branch. All changes are committed to this branch. Code that has passed the Unit tests, end to end tests on "_Local Environment_", review and hence, is ready for deployment can be merged into the "_Development_" Branch.
+
+The Screen shots below shows the options in "_WebStorm_". 
+![branchcheckoutversionetc](https://dlvgit01.bbldtl.int/github-enterprise-assets/0000/0154/0000/0130/e5d06c4e-df6e-11e4-98c4-894f08f10ad9.png)
+
+1. "_Checkout_": Click this to load the chosen Branch into "_WebStorm_" and start making changes on the same.
+
+2. "_Checkout as a new Branch_": Click on this and go on to give a name and create a new Branch out of the original branch.
+
+3. "_Compare_": Click on this to start comparing code between the Branch Loaded Locally and the Branch chosen.
+
+4. "_Merge_": Click on this to Merge code of the Branch loaded Locally and the Branch chosen.
+
+5. "_Delete_": Click on this to delete the Branch.
+
+### Commit and Push
+* The Developer makes changes to the Code. 
+* Code is tested and made ready for review
+* Developer does a  "_Commit and Push_" of the changes to the "_Issues specific_" Branch. 
+* Developer specifies in the Commit Comments, the list of Issues that the Commit fixes. 
+* The keywords "_close, closes, closed, fix, fixes, fixed, resolve, resolves and resolved_" can be used to specify status of the Issues. Usage of these keywords in Comments will facilitate automatic closure of Issues on resolution of Pull Request on the branch.
+
+The Screen shots below shows the Commit and Push options in "WebStorm".
+
+Push by clicking the Icon highlighted in the screen shot below.
+![commitoption](https://dlvgit01.bbldtl.int/github-enterprise-assets/0000/0154/0000/0131/e5d2a540-df6e-11e4-81e2-e28b0c32711e.png)
+
+On Clicking of "_Commit Changes_", the dialogue box as shown in screen shot below is displayed. Developer can click the "_Push and Commit_" option to Commit changes into the current Branch.
+![commitdialogue](https://dlvgit01.bbldtl.int/github-enterprise-assets/0000/0154/0000/0128/e5c0ccf8-df6e-11e4-9a66-48422feb7158.png)
+
+
+### Pull Requests
+* To merge a branch with another branch, pull requests are to be created (After a Pull Request is created from a Branch, any commit to the branch becomes a part of the pull request). 
+* Specify the "_Pull to Branch_" in the Pull Request.
+* Assign Issues to the Pull Request.
+* Assign Pull request to the code reviewer. 
+* Review Process
+    - The reviewer would get the branch to be reviewed and review the code. 
+    - To get the Branch, the Reviewer needs to "_Update Project_". TODO: IMAGE FOR THIS.
+    - The reviewer could create more issues (as review comments), assign it to the developer and CLOSE the "Pull Request" 
+    - If there are no Review comments, Reviewer merges the code to the "_Development_" Branch. 
+
+### Resolve a Pull Request
+
+### Rebase
+
+
+## Given below is a sample WF using the concepts described above.
+* Clone the Development Branch onto your machine (if you are getting the code on to your machine for the first time).
+* Once an Issue (tied to a milestone) is assigned to you, create a new branch of the Development Branch corresponding to the Issue assigned to you. 
+* Make changes to the Issue Branch to address the Issue.
+* Deploy on your local machine and test it. Make sure that the Unit tests and the end-to-end tests pass. 
+* "_Commit and Push_" the Code onto the Issue specific branch.
+* Enter appropriate "_Comments_" on Committing the code. Specify the Issue number(s) that you have resolved in the Committing Code.
+* Create a "_Pull Request_" on the Issue Specific Branch to the Development Branch. Assign the pull request to Reviewer. 
+* Select and check out the Branch that is to be reviewed. 
+* Merge the branch code being reviewed with the Development Branch.
+* Review the code. Capture the code review comments and create Issues for the review comments.
+* Run the Tests. Capture the defects and create Issues for the defects. 
+* Deploy the code onto the Development Branch and test the same. Capture the defects and create Issues for the defects.
+* Assign Issues found in the code review to the developer. Close the pull request, since the review has failed.
+* The developer continuous to work on the Issues assigned them and eventually fixes the review comments and goes on to follow the process continuously leading to resolving all Issues.
+* If there are no Issues found, the reviewer goes on to Commit and Push to the Development Branch.
+
+#### Also see
+* [Impressive Git  tutorials with illustration](https://www.atlassian.com/git/tutorials)
+* [The Git guides](https://guides.github.com)
+
+
+
+
+
+
+
+ 
