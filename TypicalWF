@@ -1,4 +1,4 @@
-Distributed version control of COMS is achieved by using Git. The Git Merging and branching functionality are to be used effectively to develop and deploy COMS code. Listed below are steps that guide developers to start developing using Git as a version control and to aid Continuous Deployment of COMS. Developers are to use the "_Web storm_" IDE for all development and Git Activities
+Distributed version control is achieved by using Git. The Git Merging and branching functionality are to be used effectively to develop and deploy COMS code. Listed below are steps that guide developers to start developing using Git as a version control and to aid Continuous Deployment of COMS. Developers are to use the "_Web storm_" IDE for all development and Git Activities
 
 ## Guide to Developers
 ### Cloning 
