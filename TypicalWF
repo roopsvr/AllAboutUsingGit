@@ -21,7 +21,7 @@ There are two constant branches (Master and Development branch) maintained for t
 Branch created by developer to work on an Issue. This Issue specific branch is to be created from the Development Branch. All changes are committed to this branch. Code that has passed the Unit tests, end to end tests on "_Local Environment_", review and hence, is ready for deployment can be merged into the "_Development_" Branch.
 
 The Screen shots below shows the options in "_WebStorm_". 
-![branchcheckoutversionetc](https://dlvgit01.bbldtl.int/github-enterprise-assets/0000/0154/0000/0130/e5d06c4e-df6e-11e4-98c4-894f08f10ad9.png)
+<<not available>>
 
 1. "_Checkout_": Click this to load the chosen Branch into "_WebStorm_" and start making changes on the same.
 
@@ -43,10 +43,10 @@ The Screen shots below shows the options in "_WebStorm_".
 The Screen shots below shows the Commit and Push options in "WebStorm".
 
 Push by clicking the Icon highlighted in the screen shot below.
-![commitoption](https://dlvgit01.bbldtl.int/github-enterprise-assets/0000/0154/0000/0131/e5d2a540-df6e-11e4-81e2-e28b0c32711e.png)
+<<not available>>
 
 On Clicking of "_Commit Changes_", the dialogue box as shown in screen shot below is displayed. Developer can click the "_Push and Commit_" option to Commit changes into the current Branch.
-![commitdialogue](https://dlvgit01.bbldtl.int/github-enterprise-assets/0000/0154/0000/0128/e5c0ccf8-df6e-11e4-9a66-48422feb7158.png)
+<<not available>>
 
 
 ### Pull Requests
